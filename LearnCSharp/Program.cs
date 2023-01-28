@@ -10,24 +10,12 @@ namespace Giraffe1 // Note: actual namespace depends on the project name.
     class Program
     {
         static void Main(string[] args)
-        {   //Learning about variables and datatypes
-            string characterName = "Tom";
-            int characterAge;
-            characterAge = 25;
+        {   //Building a simple interaction where program will ask for user's name and say hi to them. 
+            Console.Write("Enter your name: ");//Write is not going to a new line, WriteLine goes to a new line after printing the string.
+            string name = Console.ReadLine(); //Storing user input into a variable.
+            Console.WriteLine("Hello " + name); //Printing string and variable. 
 
-            Console.WriteLine("There once was a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
-            Console.WriteLine("He really liked the name " + characterName);
-            Console.WriteLine("But didn't like being " + characterAge);
-
-            string phrase = "Giraffe Academy";
-            //Substring (a, b) a is the first index of the character we want, b is the number of characters we want to take after a.
-            Console.WriteLine(phrase.Substring(phrase.IndexOf("Academy"))); //There are C# string methods - google it. 
-
-            //Dealing with numbers - there are built in methods Math.[method]. Can google them C# methods. 
-            
-
-            Console.ReadLine();
+            Console.ReadLine(); //lets us see our output, lets user input something
 
         }
     }
